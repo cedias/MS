@@ -14,7 +14,7 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
 			throws IOException, InterruptedException {
 		
 		for(String s: value.toString().split(" "))
-			context.write(s, new IntWritable(1));
+			context.write(new Text(s), new IntWritable(1));
 	}
 
 	
