@@ -1,0 +1,7 @@
+
+public class HdfsManagement {
+
+	
+	Configuration conf = new Configuration()
+	
+}

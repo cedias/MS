@@ -1,0 +1,9 @@
+import org.apache.hadoop.conf.Configuration;
+
+
+public class HdfsManagement {
+
+	
+	Configuration conf = new Configuration();
+	
+}

@@ -1,0 +1,27 @@
+import java.io.IOException;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+
+
+public class HdfsManagement {
+
+	
+	Configuration conf;
+	FileSystem fs;
+	
+	public HdfsManagement() throws IOException {
+		super();
+
+	}
+	
+	
+	public static void main(String[] argv){
+		Configuration conf = new Configuration();
+		FileSystem fs = FileSystem.get(conf);
+	}
+	
+	
+	
+	
+}

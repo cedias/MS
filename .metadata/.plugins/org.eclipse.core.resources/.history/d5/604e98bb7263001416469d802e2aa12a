@@ -1,0 +1,11 @@
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+
+
+public class HdfsManagement {
+
+	
+	Configuration conf = new Configuration();
+	FileSystem fs = FileSystem.get(conf);
+	
+}
