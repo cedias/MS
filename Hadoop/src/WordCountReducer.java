@@ -8,14 +8,14 @@ import org.apache.hadoop.mapreduce.Reducer;
 public class WordCountReducer extends Reducer<Text, IntWritable, Text, Text> {
 
 	protected void reduce(Text arg0, Iterable<IntWritable> arg1,
-			org.apache.hadoop.mapreduce.Reducer.Context arg2)
+			Context arg2)
 			throws IOException, InterruptedException {
 		int i = 0;
 		
 		for(IntWritable james : arg1)
 			i++;
 			
-		arg2.write(arg0,i);
+		arg2.write(arg0,new Text(i+""));
 		
 	}
 
