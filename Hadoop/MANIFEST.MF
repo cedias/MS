@@ -1,0 +1,2 @@
+Main-Class : $1
+Class-Path: ./bin/

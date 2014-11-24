@@ -1,0 +1,13 @@
+import org.apache.spark.SparkConf;
+impor t org . apache . spark . api . java . JavaSparkContext ;
+
+
+public class WordCount {
+
+	
+	public static void main(String[] args){
+		
+	}
+	
+	
+}
